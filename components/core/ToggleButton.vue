@@ -51,61 +51,65 @@ function onInputChange(e: MouseEvent) {
 
 <style scoped>
 .toggle-wrapper {
-    label {
-        display: inline-block;
-        position: relative;
-        height: 44px;
-        width: 80px;
-        background-color: var(--c-grey-2);
+    & .input-wrap {
+        display: flex;
 
-        cursor: pointer;
-        font-size: 0;
-        color: transparent;
-        border-radius: 22px;
-    }
+        label {
+            display: inline-block;
+            position: relative;
+            height: 44px;
+            width: 80px;
+            background-color: var(--c-grey-2);
 
-    label:after {
-        content: "";
-        display: block;
-        height: 35px;
-        width: 35px;
-        position: absolute;
-        top: 4px;
-        right: 38px;
-        border-radius: 50%;
-        background-color: var(--c-night-sky);
-        box-shadow: 2px 0px 0px rgba(0, 0, 0, 0.15);
-    }
+            cursor: pointer;
+            font-size: 0;
+            color: transparent;
+            border-radius: 22px;
+        }
 
-    input:checked+label {
-        background-color: var(--c-grey-3);
-    }
+        label:after {
+            content: "";
+            display: block;
+            height: 35px;
+            width: 35px;
+            position: absolute;
+            top: 4px;
+            right: 38px;
+            border-radius: 50%;
+            background-color: var(--c-night-sky);
+            box-shadow: 2px 0px 0px rgba(0, 0, 0, 0.15);
+        }
 
-    input:checked+label:after {
-        right: 7px;
-        background-color: var(--c-grey-1);
-        box-shadow: -2px 0px 0px rgba(0, 0, 0, 0.1);
-    }
+        input:checked+label {
+            background-color: var(--c-grey-3);
+        }
 
-    input {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        bottom: 0;
-    }
+        input:checked+label:after {
+            right: 7px;
+            background-color: var(--c-grey-1);
+            box-shadow: -2px 0px 0px rgba(0, 0, 0, 0.1);
+        }
 
-    /**************
-    ** ANIMATION **
-    **************/
+        input {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            bottom: 0;
+        }
 
-    label {
-        transition: background-color 500ms ease;
+        /**************
+        ** ANIMATION **
+        **************/
 
-        &:after {
-            transition: right 500ms ease, background-color 500ms ease,
-                box-shadow 500ms ease;
+        label {
+            transition: background-color 500ms ease;
+
+            &:after {
+                transition: right 500ms ease, background-color 500ms ease,
+                    box-shadow 500ms ease;
+            }
         }
     }
 }
