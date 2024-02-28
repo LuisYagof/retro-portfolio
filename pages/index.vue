@@ -44,7 +44,8 @@
 main {
     display: grid;
     align-content: center;
-    height: calc(100vh - 4rem);
+    height: calc(100dvh - 4rem);
+    width: 100dvw;
 
     & .title {
         text-align: center;

@@ -50,4 +50,12 @@ function setDate(): string {
         font-weight: 400;
     }
 }
+
+@media (max-width: 556px) {
+    .date-wrapper {
+        & .date {
+            font-size: 0.6rem;
+        }
+    }
+}
 </style>

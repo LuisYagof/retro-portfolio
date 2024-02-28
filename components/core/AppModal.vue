@@ -65,7 +65,7 @@ const emits = defineEmits({
         background-color: var(--c-night-sky);
         min-width: 45rem;
         max-width: 50rem;
-        max-height: 95vh;
+        max-height: 95dvh;
         position: relative;
         display: flex;
         flex-direction: column;
@@ -104,6 +104,16 @@ const emits = defineEmits({
             font-size: 16px;
             margin-top: 1rem;
         } */
+    }
+}
+
+
+@media (max-width: 556px) {
+    .modal-overlay {
+        & .modal {
+            max-width: 100dvw;
+            min-width: 100dvw;
+        }
     }
 }
 </style>

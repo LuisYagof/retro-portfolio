@@ -14,14 +14,14 @@
 }
 
 .background {
-    --size: 250px;
+    --size: 280px;
     --speed: 20s;
     --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
 
     position: absolute;
     z-index: -1;
-    left: 35vw;
-    top: 11vh;
+    left: 30vw;
+    top: 25vh;
 
     width: var(--size);
     height: var(--size);
@@ -31,9 +31,27 @@
     border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
 }
 
+@media (min-width: 556px) {
+    .background {
+        --size: 350px;
+        left: 26vw;
+        top: 17vh;
+    }
+}
+
 @media (min-width: 720px) {
     .background {
+        --size: 460px;
+        left: 25vw;
+        top: 16vh;
+    }
+}
+
+@media (min-width: 1024px) {
+    .background {
         --size: 500px;
+        left: 35vw;
+        top: 25vh;
     }
 }
 </style>

@@ -41,7 +41,7 @@ function toggleTheme(newValue: boolean) {
 
 <style  scoped>
 footer {
-    width: 100vw;
+    width: 100dvw;
     height: 4rem;
     background: var(--c-bg);
     position: absolute;
@@ -50,7 +50,6 @@ footer {
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
-
 
     .icon {
         width: 35px;
@@ -64,6 +63,14 @@ footer {
         &.right {
             position: absolute;
             right: 3px;
+        }
+    }
+}
+
+@media (max-width: 556px) {
+    footer {
+        & span {
+            font-size: 0.6rem;
         }
     }
 }

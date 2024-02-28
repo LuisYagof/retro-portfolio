@@ -5,11 +5,14 @@
 
 html {
     height: 100dvh;
+    width: 100dvw;
     overflow: hidden;
 }
 
 body {
     height: 100dvh;
+    width: 100dvw;
+    overflow: hidden;
     filter: contrast(100%) brightness(100%);
     background: var(--bg-grad);
     color: var(--c-text);
