@@ -5,6 +5,7 @@ export default defineNuxtConfig({
   devServer: {
     port: 5555
   },
-  css: ['~/assets/styles/main.css', '~/assets/styles/fonts.css', '~/assets/styles/reset.css'],
-  plugins: ['~/plugins/dragDrop.ts']
+  css: ['~/assets/styles/main.css', '~/assets/styles/fonts.css', '~/assets/styles/reset.css', '~/assets/styles/colors.css'],
+  plugins: ['~/plugins/dragDrop.ts'],
+  modules: ['@nuxtjs/color-mode']
 })

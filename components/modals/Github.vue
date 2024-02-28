@@ -22,5 +22,11 @@ const emits = defineEmits({
 <style scoped>
 .github-content {
     padding: 0 2rem;
+
+    & span {
+        & a {
+            color: var(--c-white-mild)
+        }
+    }
 }
 </style>

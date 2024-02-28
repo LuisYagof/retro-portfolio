@@ -55,14 +55,14 @@ const emits = defineEmits({
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #464646cc;
-    color: #eee;
+    background-color: var(--c-divider-dark-2);
+    color: var(--c-white-soft);
     font-family: 'KodeMono';
     font-size: 14px;
     z-index: 99;
 
     .modal {
-        background-color: rgb(0, 109, 103);
+        background-color: var(--c-night-sky);
         min-width: 45rem;
         max-width: 50rem;
         max-height: 95vh;
@@ -79,7 +79,7 @@ const emits = defineEmits({
             width: 100%;
             justify-content: space-between;
             padding: 0.5rem;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid var(--c-white-mild);
 
             .title-text {
                 font-size: 24px;
@@ -89,7 +89,7 @@ const emits = defineEmits({
             }
 
             .close-wrapper {
-                border: 1px solid #eee;
+                border: 1px solid var(--c-white-mild);
                 width: 2rem;
                 text-align: center;
 
