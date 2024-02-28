@@ -14,18 +14,19 @@ function handleError() {
 
 <template>
     <NuxtLayout>
-        <div class="error-wrapper">
-            <h1>
-                {{ is404 ? 'This page could not be found' : 'An error occurred' }}
-            </h1>
-            <span>
-                Looks like you've followed a broken link or entered a URL that doesn't exist on this site.
-            </span>
-            <pre v-if="isDev">{{ error }}</pre>
-            <button @click="handleError">
-                Go Back
-            </button>
-        </div>
+        <CoreBackgroundAnimation />
+            <div class="error-wrapper">
+                <h1>
+                    {{ is404 ? 'This page could not be found' : 'An error occurred' }}
+                </h1>
+                <span>
+                    Looks like you've followed a broken link or entered a URL that doesn't exist on this site.
+                </span>
+                <pre v-if="isDev">{{ error }}</pre>
+                <button @click="handleError">
+                    Go Back
+                </button>
+            </div>
     </NuxtLayout>
 </template>
 

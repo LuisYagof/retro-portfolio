@@ -4,6 +4,7 @@
     
 <template>
     <main>
+        <CoreBackgroundAnimation />
         <div class="title">
             <h1>Luis Yago Fernández</h1>
             <h2>
@@ -52,12 +53,13 @@ main {
         h1 {
             font-size: 3rem;
             font-weight: 500;
+            color: var(--c-white-mild)
         }
 
         h2 {
             font-size: 1.5rem;
             font-weight: 300;
-
+            color: var(--c-night-sky)
         }
     }
 

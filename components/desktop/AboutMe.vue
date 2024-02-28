@@ -43,6 +43,7 @@ function onDoubleClick() {
     top: 1rem;
     z-index: 1;
     text-align: center;
+    /* transition: all 0.15s ease-out; */
 
     & .img-wrapper {
         width: 4rem;
