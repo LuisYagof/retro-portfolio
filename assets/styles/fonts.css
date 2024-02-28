@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'KodeMono';
+    font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/KodeMono');
+    src:
+        local(''),
+        url('/fonts/KodeMono.ttf') format('truetype');
+}
