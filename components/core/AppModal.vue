@@ -96,6 +96,7 @@ const emits = defineEmits({
                 .close-icon {
                     cursor: pointer;
                     font-size: 1.5rem;
+                    line-height: 1.95rem;
                 }
             }
         }
@@ -113,6 +114,8 @@ const emits = defineEmits({
         & .modal {
             max-width: 100dvw;
             min-width: 100dvw;
+            max-height: 75dvh;
+            overflow-y: scroll;
         }
     }
 }
