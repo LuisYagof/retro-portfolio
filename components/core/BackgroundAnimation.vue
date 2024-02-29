@@ -15,8 +15,8 @@
 
 .background {
     --size: 280px;
-    --speed: 20s;
-    --easing: cubic-bezier(0.8, 0.2, 0.2, 0.8);
+    --speed: 13s;
+    --easing: cubic-bezier(0.7, 0.3, 0.3, 0.7);
 
     position: absolute;
     z-index: -1;
